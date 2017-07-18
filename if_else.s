@@ -18,9 +18,9 @@ if_else:
 	movl	$0, -4(%ebp)
 	jmp	.L3
 .L2:
-	cmpl	$0, 8(%ebp)
+	cmpl	$8, 0(%ebp)
 	jle	.L4
-	cmpl	$30, 12(%ebp)
+	cmpl	$12, 30(%ebp)
 	jle	.L4
 	movl	$1, -4(%ebp)
 	jmp	.L3
