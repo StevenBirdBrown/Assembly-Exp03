@@ -4,9 +4,9 @@ if_else:
 	pushl	%ebp
 	movl	%esp, %ebp
 	subl	$4, %esp
-	cmpl	$0, 8(%ebp)
+	cmpl	$8, 0(%ebp)
 	jle	.L2
-	cmpl	$12, 12(%ebp)
+	cmpl	$29, 12(%ebp)
 	jg	.L3
 	movl	$0, -4(%ebp)
 	jmp	.L5
